@@ -2,14 +2,30 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
-first_name: You
-middle_name: R.
-last_name: Name
+title:
+first_name: Florentin
+middle_name:
+last_name: Acker
 contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  florentin.acker.2023@polytechnique.org
+description: >
+  Student at École Polytechnique, currently doing a research internship with Lorenzo Rosasco
+  on operator learning. Passionate about functional analysis, applied mathematics,
+  and scientific machine learning (SciML). Looking to build a career in AI research.
+
+url: https://florentinacker.github.io
+baseurl:
+
+lang: en
+icon: 🧮
+
+last_updated: true
+
+blog_name: Florentin Acker
+blog_description: AI research, applied mathematics and SciML
+
+linkedin_username: florentin-acker-1066b628a
+twitter_username: FlorentinAcker
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
