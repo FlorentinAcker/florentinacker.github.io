@@ -1,3 +1,19 @@
-email: florentin.acker.2023@polytechnique.org
-linkedin_username: florentin-acker-1066b628a
-twitter_username: FlorentinAcker
+# _data/socials.yml
+
+- name: Twitter
+  link: https://twitter.com/TON_USERNAME
+  icon: fa-brands fa-x-twitter   # ou fa-brands fa-twitter
+  enabled: true
+
+- name: LinkedIn
+  link: https://linkedin.com/in/TON_USERNAME
+  icon: fa-brands fa-linkedin
+  enabled: true
+
+# Tout le reste : enabled: false
+- name: GitHub
+  link: https://github.com/florentinacker
+  icon: fa-brands fa-github
+  enabled: false
+
+# etc. pour chaque autre réseau présent dans le fichier
