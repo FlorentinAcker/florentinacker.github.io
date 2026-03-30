@@ -19,9 +19,6 @@ baseurl:
 
 last_updated: true
 
-blog_name: Florentin Acker
-blog_description: AI research, applied mathematics and SciML
-
 linkedin_username: florentin-acker-1066b628a
 twitter_username: FlorentinAcker
 footer_text: >
@@ -102,9 +99,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
-permalink: /blog/:year/:title/
+blog_name: Florentin Acker # blog_name will be displayed in your blog page
+blog_description: AI research, applied mathematics and SciML
 lsi: false # produce an index for related posts
 
 # Pagination
