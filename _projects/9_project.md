@@ -1,80 +1,28 @@
 ---
 layout: page
-title: project 9
-description: another project with an image 🎉
-img: assets/img/6.jpg
-importance: 4
-category: fun
+title: Hawkes Processes for Earthquake Modelling
+description: Comparing Poisson and Hawkes point process models on a USGS seismic catalogue
+img: assets/img/hawkes.jpg
+importance: 2
+category: research
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Short empirical study comparing a homogeneous Poisson process with marked and unmarked exponential and power-law Hawkes processes on an earthquake catalogue from the [USGS Earthquake Hazards Program](https://earthquake.usgs.gov/earthquakes/search/). The dataset contains 2961 events recorded over the United States between January 2025 and May 2026.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Models are fitted by maximum likelihood and evaluated via Ogata's time-rescaling theorem: under correct specification, the rescaled inter-arrival times should be i.i.d. Exp(1). KS and chi-squared tests on the residuals are used to assess absolute goodness of fit.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+## What I did
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- Implemented the **Hawkes process models** (exponential and power-law kernels, marked and unmarked), including the log-likelihood and its numerical maximisation via `scipy.minimize`.
+- Applied **Ogata's time-rescaling theorem** for residual diagnostics, and ran KS and chi-squared tests against the Exp(1) reference.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+## Main findings
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+The homogeneous Poisson model is strongly rejected (KS p < 10⁻²⁰), consistent with the pronounced temporal clustering visible in the raw inter-event times. Among Hawkes specifications, the marked exponential kernel provides the best fit (KS statistic 0.017, p ≈ 0.39; chi-squared p ≈ 0.07), while the power-law variants are also rejected. The positive magnitude coefficient (γ̂ = 1.12) confirms that larger earthquakes trigger more aftershock activity.
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+The analysis is purely temporal and ignores spatial structure, and the background rate is assumed constant — both acknowledged limitations in the report.
 
-{% raw %}
+## Code
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+Available on [GitHub](https://github.com/FlorentinAcker/earthquakes).
