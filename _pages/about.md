@@ -19,8 +19,8 @@ announcements:
   enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true
+  enabled: false
+  scrollable: false
   limit: 3
 ---
 
