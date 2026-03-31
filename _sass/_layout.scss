@@ -20,6 +20,11 @@ body {
   }
 }
 
+.post > article > .clearfix {
+  font-size: 1.12rem;
+  line-height: 1.75;
+}
+
 body.fixed-top-nav {
   // Add some padding for the nav-bar.
   padding-top: 57px;
