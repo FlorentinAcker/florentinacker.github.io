@@ -10,7 +10,6 @@ profile:
   image_circular: false
   more_info: >
     <p>Paris, France</p>
-    <p>florentin.acker.2023@polytechnique.org</p>
 
 selected_papers: false
 social: true
