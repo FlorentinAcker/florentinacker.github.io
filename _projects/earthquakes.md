@@ -2,7 +2,7 @@
 layout: page
 title: Hawkes Process Modelling of Seismic Activity
 description: Comparing Poisson and Hawkes processes on a USGS earthquake catalogue
-img: assets/img/hawkes.jpeg
+img: assets/img/earthquakes.png
 importance: 2
 category: research
 related_publications: false
