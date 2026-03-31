@@ -1,19 +1,21 @@
 # _data/socials.yml
 
 - name: Twitter
-  link: https://twitter.com/TON_USERNAME
-  icon: fa-brands fa-x-twitter   # ou fa-brands fa-twitter
+  link: https://twitter.com/FlorentinAcker
+  icon: fa-brands fa-x-twitter
   enabled: true
 
 - name: LinkedIn
-  link: https://linkedin.com/in/TON_USERNAME
+  link: https://linkedin.com/in/florentin-acker-1066b628a
   icon: fa-brands fa-linkedin
   enabled: true
 
-# Tout le reste : enabled: false
+- name: CV
+  link: /assets/pdf/cv.pdf
+  icon: fa-solid fa-file-pdf
+  enabled: true
+
 - name: GitHub
   link: https://github.com/florentinacker
   icon: fa-brands fa-github
   enabled: false
-
-# etc. pour chaque autre réseau présent dans le fichier
