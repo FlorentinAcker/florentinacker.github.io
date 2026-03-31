@@ -44,9 +44,9 @@ ninja.data = [{
           description: "Benchmarking MC-Dropout and Deep Ensembles on toy regression and MNIST",
           section: "Projects",handler: () => {
               window.location.href = "/projects/EpistemicUncertainty.html";
-            },},{id: "projects-earthquakes",
-          title: 'Earthquakes',
-          description: "Coming soon.",
+            },},{id: "projects-hawkes-process-modelling-of-seismic-activity",
+          title: 'Hawkes Process Modelling of Seismic Activity',
+          description: "Comparing Poisson and Hawkes processes on a USGS earthquake catalogue",
           section: "Projects",handler: () => {
               window.location.href = "/projects/earthquakes.html";
             },},{id: "teachings-data-science-fundamentals",
