@@ -2,7 +2,7 @@
 layout: page
 title: Bayesian Deep Learning for Predictive Uncertainty
 description: Benchmarking MC-Dropout and Deep Ensembles on toy regression and MNIST
-img: assets/img/mnist.jepg
+img: assets/img/mnist.jpeg
 importance: 1
 category: research
 related_publications: false
